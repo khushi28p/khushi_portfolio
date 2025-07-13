@@ -1,9 +1,11 @@
 import React from 'react'
+import Example from './components/Particle';
 
 const App = () => {
+
   return (
-    <div className='flex items-center justify-center h-screen bg-gray-100'>
-      Hello World!
+    <div className="w-screen h-screen"> 
+      <Example /> 
     </div>
   )
 }
