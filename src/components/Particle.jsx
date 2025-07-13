@@ -4,12 +4,12 @@
   class Example extends React.Component {
     componentDidMount() {
       new Particle('#demo', {
-    color: ['#7FFF00', '#00FF00', '#00FF7F'],
+    color: ['#FFFFFF'],
     lineShape: 'cube',
     range: 2000,
     proximity: 100,
     parallax: true,
-    opacity: 0.5
+    opacity: 0.4,
 })
     }
 
