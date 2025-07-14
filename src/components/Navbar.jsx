@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
           <a
             key={item.name}
             href={item.href}
-            className="text-[#FFD401] font-medium px-4 py-2 rounded-md
+            className="text-[#FFD401] text-lg font-medium px-4 py-2 rounded-md
                        hover:bg-gray-100/20 hover:bg-opacity-20 transition duration-300 ease-in-out"
           >
             {item.name}
