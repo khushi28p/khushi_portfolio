@@ -1,7 +1,7 @@
 import React from "react";
 import Example from "./Particle";
 
-const HomePage = () => {
+const HeroSection = () => {
   return (
     <div>
       <div className="absolute inset-0 z-0">
@@ -55,6 +55,14 @@ const HomePage = () => {
               </svg>
             </a>
           </div>
+          <div className='absolute bottom-10 left-1/2 -translate-x-1/2 pointer-events-auto'>
+          <a href="#about" className='flex items-center text-[#FFD401] text-lg hover:text-yellow-400 transition duration-300'>
+            About me
+            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
         </div>
         <div className="w-1/3 flex justify-center items-center pointer-events-auto">
           <img
@@ -68,4 +76,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HeroSection;
