@@ -4,11 +4,32 @@
   --font-family-display: 'Montserrat', sans-serif;
   --font-family-body: 'Roboto', sans-serif;
 
-  --color-custom-yellow: #FFD401;
+  --portfolio-accent: #FFD401; 
+  --portfolio-accent-rgb: 255, 212, 1; 
+  --portfolio-text-on-accent: #000000;
+
+  --bg-primary: #000000; 
+  --text-primary: #FFFFFF; 
+  --secondary-text: #9CA3AF; 
+  --tertiary-text: #D1D5DB; 
+  --card-bg-primary: #1F2937; 
+  --subtle-card-bg: #111827; 
+  --input-bg: #374151; 
+  --input-border: #4B5563;
+  --placeholder-text: #6B7280; 
+  --line-color: #4B5563;
+  --particle-color: #FFFFFF; 
+  --particle-line-color: #FFFFFF; 
+
+  --bg-primary-rgb: 0, 0, 0; 
+  --text-primary-rgb: 255, 255, 255; 
 }
 
 html, body, #root {
-  @apply h-full; 
+  @apply h-full;
+  background-color: var(--bg-primary);
+  color: var(--text-primary); 
+  transition: background-color 0.5s ease, color 0.5s ease; 
 }
 
 body {
@@ -19,16 +40,30 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-display);
 }
 
+.bg-primary { background-color: var(--bg-primary); }
+.bg-card { background-color: var(--card-bg-primary); }
+.bg-subtle-card { background-color: var(--subtle-card-bg); }
+.bg-input { background-color: var(--input-bg); }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--secondary-text); }
+.text-tertiary { color: var(--tertiary-text); }
+
+.placeholder-text-color::placeholder { color: var(--placeholder-text); }
+
+.border-input { border-color: var(--input-border); }
+.border-line { border-color: var(--line-color); }
+
 .contact-icon-glow {
   position: relative;
-  overflow: hidden; 
-  display: inline-flex; 
+  overflow: hidden;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem; 
-  border-radius: 9px; 
+  padding: 0.5rem;
+  border-radius: 9px;
   box-shadow: 0 0 0 transparent;
-  transition: box-shadow 0.3s ease-out, transform 0.2s ease-out; 
+  transition: box-shadow 0.3s ease-out, transform 0.2s ease-out;
 }
 
 .contact-icon-glow::before {
@@ -39,19 +74,51 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   border-radius: inherit;
-  background: radial-gradient(circle at center, rgba(255, 212, 1, 0.2), transparent 70%); 
+  background: radial-gradient(circle at center, rgba(var(--portfolio-accent-rgb), 0.2), transparent 70%);
   opacity: 0;
-  transform: scale(0.5); 
+  transform: scale(0.5);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .contact-icon-glow:hover {
-  transform: translateY(-3px); 
-  box-shadow: 0 0 15px rgba(255, 212, 1, 0.6); 
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px var(--portfolio-accent);
 }
 
 .contact-icon-glow:hover::before {
   opacity: 1;
-  transform: scale(1); 
+  transform: scale(1);
+}
+
+.navbar-dynamic-bg {
+  background-color: rgba(var(--bg-primary-rgb), 0.7); /* Use RGB for transparency */
+  backdrop-filter: blur(4px);
+}
+
+.skill-chip {
+  border-color: var(--portfolio-accent);
+  color: var(--portfolio-accent);
+}
+.skill-chip:hover {
+  background-color: var(--portfolio-accent);
+  color: var(--portfolio-text-on-accent);
+}
+
+.about-timeline-line {
+  background-color: var(--line-color); 
+}
+.about-timeline-dot {
+  background-color: var(--portfolio-accent); 
+  border-color: var(--bg-primary); 
+}
+
+.form-input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border); 
+  color: var(--text-primary); 
+}
+
+.project-card, .experience-card, .contact-form-card {
+    background-color: var(--subtle-card-bg); 
 }

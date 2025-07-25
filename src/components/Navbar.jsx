@@ -11,14 +11,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-20 top-0 left-0 bg-transparent py-4 backdrop-filter backdrop-blur-xs">
+    <nav className="fixed w-full z-20 top-0 left-0 py-4 backdrop-filter backdrop-blur-xs navbar-dynamic-bg">
       <div className="container mx-auto px-4 flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
         {navItems.map((item) => (
           <a
             key={item.name}
             href={item.href}
-            className="text-[#FFD401] text-lg font-medium px-4 py-2 rounded-md
-                       hover:bg-gray-100/20 hover:bg-opacity-20 transition duration-300 ease-in-out"
+            className="text-[var(--portfolio-accent)] text-lg font-medium px-4 py-2 rounded-md
+                       hover-nav-item transition duration-300 ease-in-out"
           >
             {item.name}
           </a>

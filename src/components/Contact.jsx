@@ -2,22 +2,22 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-8 md:px-20 lg:px-40 bg-black text-white text-center">
-      <h2 className="text-5xl md:text-6xl font-bold font-display mb-12 text-[#FFD401]"> 
+    <section id="contact" className="py-20 px-8 md:px-20 lg:px-40 bg-primary text-primary text-center">
+      <h2 className="text-5xl md:text-6xl font-bold font-display mb-12 text-[var(--portfolio-accent)]">
         Let's Connect
       </h2>
 
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 lg:gap-20">
-
         <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <p className="text-md md:text-lg mb-8 font-body">
-            I'm always open to new opportunities and collaborations. Feel free to reach out!
+          <p className="text-xl md:text-2xl mb-8 font-body">
+            I'm always open to new opportunities and collaborations. Feel free
+            to reach out!
           </p>
 
           <div className="flex justify-center lg:justify-start space-x-8 mt-4 w-full">
             <a
               href="mailto:kparmar2855@gmail.com"
-              className="text-gray-400 hover:text-[#FFD401] transition-colors duration-300 flex flex-col items-center group
+              className="text-secondary hover:text-[var(--portfolio-accent)] transition-colors duration-300 flex flex-col items-center group
                          relative contact-icon-glow"
               aria-label="Email Khushi Parmar"
             >
@@ -29,7 +29,7 @@ const Contact = () => {
               href="https://linkedin.com/in/khushi28parmar"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#FFD401] transition-colors duration-300 flex flex-col items-center group
+              className="text-secondary hover:text-[var(--portfolio-accent)] transition-colors duration-300 flex flex-col items-center group
                          relative contact-icon-glow"
               aria-label="LinkedIn Profile"
             >
@@ -41,7 +41,7 @@ const Contact = () => {
               href="https://github.com/khushi28p"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#FFD401] transition-colors duration-300 flex flex-col items-center group
+              className="text-secondary hover:text-[var(--portfolio-accent)] transition-colors duration-300 flex flex-col items-center group
                          relative contact-icon-glow"
               aria-label="GitHub Profile"
             >
@@ -52,30 +52,30 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="lg:w-1/2 w-full mt-8 lg:mt-0 bg-neutral-900 rounded-lg shadow-xl p-8"> 
+        <div className="lg:w-1/2 w-full mt-8 lg:mt-0 contact-form-card"> 
           <form className="max-w-xl mx-auto space-y-6">
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full p-4 rounded-lg bg-neutral-800 border border-neutral-700 text-white
-                         placeholder-neutral-500 focus:outline-none focus:border-[#FFD401] focus:ring-1 focus:ring-[#FFD401] font-body"
+              className="w-full p-4 rounded-lg border font-body form-input placeholder-text-color
+                         focus:outline-none focus:border-[var(--portfolio-accent)] focus:ring-1 focus:ring-[var(--portfolio-accent)]"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-4 rounded-lg bg-neutral-800 border border-neutral-700 text-white
-                         placeholder-neutral-500 focus:outline-none focus:border-[#FFD401] focus:ring-1 focus:ring-[#FFD401] font-body"
+              className="w-full p-4 rounded-lg border font-body form-input placeholder-text-color
+                         focus:outline-none focus:border-[var(--portfolio-accent)] focus:ring-1 focus:ring-[var(--portfolio-accent)]"
             />
             <textarea
               placeholder="Your Message"
               rows="6"
-              className="w-full p-4 rounded-lg bg-neutral-800 border border-neutral-700 text-white
-                         placeholder-neutral-500 focus:outline-none focus:border-[#FFD401] focus:ring-1 focus:ring-[#FFD401] font-body"
+              className="w-full p-4 rounded-lg border font-body form-input placeholder-text-color
+                         focus:outline-none focus:border-[var(--portfolio-accent)] focus:ring-1 focus:ring-[var(--portfolio-accent)]"
             ></textarea>
             <button
               type="submit"
-              className="px-8 py-4 bg-[#FFD401] text-black font-bold font-display rounded-lg hover:bg-yellow-400
-                         transition duration-300 shadow-lg hover:shadow-xl w-full"
+              className="px-8 py-4 bg-[var(--portfolio-accent)] text-[var(--portfolio-text-on-accent)] font-bold font-display rounded-lg
+                         hover:bg-[var(--portfolio-accent)] transition duration-300 shadow-lg hover:shadow-xl w-full"
             >
               Send Message
             </button>
