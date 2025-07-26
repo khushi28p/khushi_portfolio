@@ -23,6 +23,8 @@
 
   --bg-primary-rgb: 0, 0, 0; 
   --text-primary-rgb: 255, 255, 255; 
+
+  --logo-brightness: 100%;
 }
 
 html, body, #root {
@@ -92,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-dynamic-bg {
-  background-color: rgba(var(--bg-primary-rgb), 0.7); /* Use RGB for transparency */
+  background-color: rgba(var(--bg-primary-rgb), 0.7);
   backdrop-filter: blur(4px);
 }
 
@@ -121,4 +123,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card, .experience-card, .contact-form-card {
     background-color: var(--subtle-card-bg); 
+}
+
+.filter-accent-svg {
+  filter: brightness(var(--logo-brightness));
+  transition: filter 0.5s ease;
 }
