@@ -71,33 +71,39 @@ export const ThemeProvider = ({ children }) => {
     let calculatedLineColor;
     let calculatedBgPrimaryRgb;
     let calculatedTextPrimaryRgb;
+    let calculatedParticleColor;
+    let calculatedParticleLineColor;
 
     if (brightness < 120) {
-      calculatedBgColor = "#F3F4F6"; 
-      calculatedTextColor = "#1F2937"; 
+      calculatedBgColor = "#F3F4F6";
+      calculatedTextColor = "#1F2937";
       calculatedCardBgPrimary = "#FFFFFF";
-      calculatedSubtleCardBg = "#E5E7EB"; 
-      calculatedSecondaryText = "#4B5563"; 
-      calculatedTertiaryText = "#374151"; 
-      calculatedInputBg = "#E5E7EB"; 
-      calculatedInputBorder = "#D1D5DB"; 
-      calculatedPlaceholderText = "#9CA3AF"; 
-      calculatedLineColor = "#D1D5DB"; 
+      calculatedSubtleCardBg = "#E5E7EB";
+      calculatedSecondaryText = "#4B5563";
+      calculatedTertiaryText = "#374151";
+      calculatedInputBg = "#E5E7EB";
+      calculatedInputBorder = "#D1D5DB";
+      calculatedPlaceholderText = "#9CA3AF";
+      calculatedLineColor = "#D1D5DB";
       calculatedBgPrimaryRgb = "243, 244, 246";
       calculatedTextPrimaryRgb = "31, 41, 55";
+      calculatedParticleColor = "#000000";
+      calculatedParticleLineColor = "#000000";
     } else {
-      calculatedBgColor = "#000000"; 
-      calculatedTextColor = "#FFFFFF"; 
-      calculatedCardBgPrimary = "#1F2937"; 
-      calculatedSubtleCardBg = "#111827"; 
-      calculatedSecondaryText = "#9CA3AF"; 
-      calculatedTertiaryText = "#D1D5DB"; 
-      calculatedInputBg = "#374151"; 
-      calculatedInputBorder = "#4B5563"; 
-      calculatedPlaceholderText = "#6B7280"; 
-      calculatedLineColor = "#4B5563"; 
+      calculatedBgColor = "#000000";
+      calculatedTextColor = "#FFFFFF";
+      calculatedCardBgPrimary = "#1F2937";
+      calculatedSubtleCardBg = "#111827";
+      calculatedSecondaryText = "#9CA3AF";
+      calculatedTertiaryText = "#D1D5DB";
+      calculatedInputBg = "#374151";
+      calculatedInputBorder = "#4B5563";
+      calculatedPlaceholderText = "#6B7280";
+      calculatedLineColor = "#4B5563";
       calculatedBgPrimaryRgb = "0, 0, 0";
       calculatedTextPrimaryRgb = "255, 255, 255";
+      calculatedParticleColor = "#FFFFFF";
+      calculatedParticleLineColor = "#FFFFFF";
     }
 
     document.documentElement.style.setProperty(
@@ -146,10 +152,13 @@ export const ThemeProvider = ({ children }) => {
       calculatedTextPrimaryRgb
     );
 
-    document.documentElement.style.setProperty("--particle-color", accentColor);
+    document.documentElement.style.setProperty(
+      "--particle-color",
+      calculatedParticleColor
+    );
     document.documentElement.style.setProperty(
       "--particle-line-color",
-      accentColor       
+      calculatedParticleLineColor
     );
   }, [accentColor]);
 
