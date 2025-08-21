@@ -20,7 +20,6 @@ class Example extends React.Component {
       proximity: 100,
       parallax: true,
       opacity: 0.3,
-      backgroundColor: null,
     });
   }
 
