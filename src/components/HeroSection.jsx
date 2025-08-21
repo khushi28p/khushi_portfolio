@@ -1,11 +1,11 @@
 import React from "react";
-import Example from "./Particle"; 
+import ParticleBackground from "./Particle"; 
 
 const HeroSection = () => {
   return (
     <div>
       <div className="absolute inset-0 z-0">
-        <Example />
+        <ParticleBackground />
       </div>
       <div className="relative flex justify-between items-center h-screen z-10 px-40 pointer-events-none">
         <div>

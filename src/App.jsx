@@ -1,5 +1,3 @@
-import React from "react";
-import Example from "./components/Particle";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
