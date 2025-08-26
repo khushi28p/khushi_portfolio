@@ -17,6 +17,8 @@ import {
   SiNetlify,
   SiPostman,
   SiFigma,
+  SiCplusplus,
+  SiTypescript,
   SiIntellijidea,
 } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -24,23 +26,25 @@ import { IoLogoFirebase } from "react-icons/io5";
 const skillsData = [
   { name: "React", icon: <FaReact />, category: "Frontend" },
   { name: "JavaScript", icon: <FaJs />, category: "Languages" },
+  { name: "TypeScript", icon: <SiTypescript />, category: "Languages" },
   { name: "Node.js", icon: <FaNodeJs />, category: "Backend" },
   { name: "Express.js", icon: <SiVercel />, category: "Backend" },
   { name: "HTML5", icon: <FaHtml5 />, category: "Frontend" },
   { name: "CSS3", icon: <FaCss3Alt />, category: "Frontend" },
-  { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "Styling" },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "Frontend" },
+  { name: "C/C++", icon: <SiCplusplus />, category: "Languages" },
   { name: "Python", icon: <FaPython />, category: "Languages" },
   { name: "Java", icon: <FaJava />, category: "Languages" },
   { name: "MySQL", icon: <FaDatabase />, category: "Databases" },
   { name: "PostgreSQL", icon: <SiPostgresql />, category: "Databases" },
   { name: "MongoDB", icon: <SiMongodb />, category: "Databases" },
   { name: "Firebase", icon: <IoLogoFirebase />, category: "Databases" },
-  { name: "Git", icon: <FaGitAlt />, category: "Tools" },
-  { name: "Postman", icon: <SiPostman />, category: "Tools" },
-  { name: "Figma", icon: <SiFigma />, category: "Tools" },
-  { name: "Vercel", icon: <SiVercel />, category: "Deployment" },
-  { name: "Netlify", icon: <SiNetlify />, category: "Deployment" },
-  { name: "IntelliJ", icon: <SiIntellijidea />, category: "Tools" },
+  { name: "Git", icon: <FaGitAlt />, category: "Tools & Deployment" },
+  { name: "Postman", icon: <SiPostman />, category: "Tools & Deployment" },
+  { name: "Figma", icon: <SiFigma />, category: "Tools & Deployment" },
+  { name: "Vercel", icon: <SiVercel />, category: "Tools & Deployment" },
+  { name: "Netlify", icon: <SiNetlify />, category: "Tools & Deployment" },
+  { name: "IntelliJ", icon: <SiIntellijidea />, category: "Tools & Deployment" },
 ];
 
 export const allCategories = [
@@ -49,8 +53,6 @@ export const allCategories = [
   "Frontend",
   "Backend",
   "Databases",
-  "Styling",
-  "Tools",
-  "Deployment",
+  "Tools & Deployment",
 ];
 export default skillsData;

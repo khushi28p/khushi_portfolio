@@ -157,3 +157,57 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   transform: scale(1);
 }
+
+@keyframes slide-in-rect {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+.animated-rect {
+  position: absolute;
+  opacity: 0;
+  animation-name: slide-in-rect;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Specific rectangles and their animation delays */
+.rect-1 {
+  width: 100px;
+  height: 500px;
+  bottom: -250px;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.rect-2 {
+  width: 80px;
+  height: 400px;
+  top: -100px;
+  right: 20%;
+  animation-delay: 1.5s;
+}
+
+.rect-3 {
+  width: 120px;
+  height: 600px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 2.5s;
+}
+
+.rect-4 {
+  width: 90px;
+  height: 450px;
+  top: -150px;
+  left: 5%;
+  animation-delay: 3s;
+}
