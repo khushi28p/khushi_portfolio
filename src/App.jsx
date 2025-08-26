@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Projects />
         <Skills />
         <Contact />
+        <Footer />
         <ThemeSwitcher />
       </div>
     </ThemeProvider>

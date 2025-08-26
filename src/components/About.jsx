@@ -37,30 +37,10 @@ const About = () => {
       <h2 className="text-5xl md:text-6xl font-bold font-display text-center mb-12 text-[var(--portfolio-accent)]">
         About Me
       </h2>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <p className="text-xl md:text-2xl leading-relaxed mb-6 font-body">
-            Hi, I'm{" "}
-            <span className="text-[var(--portfolio-accent)] font-semibold">
-              Khushi Parmar
-            </span>
-            , a passionate Full Stack Developer with a strong focus on crafting
-            responsive and intuitive web applications. My core expertise lies in
-            the{" "}
-            <span className="text-[var(--portfolio-accent)] font-semibold">
-              MERN stack
-            </span>
-            .
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed mb-6 font-body">
-            I thrive on turning innovative ideas into reality through clean,
-            efficient code and am continuously expanding my skill set. I love to
-            solve complex challenges and contribute to impactful projects.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed mb-8 font-body">
-            My journey into full-stack development has equipped me with the
-            skills to handle both front-end user interfaces and robust back-end
-            systems, ensuring seamless functionality from concept to deployment.
+      <div className="flex flex-col lg:flex-row justify-center align-center items-center lg:items-start gap-12">
+        <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-up">
+          <p className="text-xl md:text-2xl leading-relaxed mb-6 font-body text-[var(--portfolio-secondary)]">
+            Hi, I'm <span className="text-[var(--portfolio-accent)] font-bold">Khushi Parmar</span>, a passionate Full Stack Developer specializing in the <span className="text-[var(--portfolio-accent)] font-bold">MERN stack</span>. My expertise lies in crafting clean, efficient, and user-friendly web applications from concept to deployment. I thrive on solving complex challenges and am always eager to learn new technologies to deliver impactful, seamless digital experiences.
           </p>
         </div>
 

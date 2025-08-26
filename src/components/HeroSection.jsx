@@ -3,7 +3,7 @@ import ParticleBackground from "./Particle";
 
 const HeroSection = () => {
   return (
-    <div>
+    <div id="home">
       <div className="absolute inset-0 z-0">
         <ParticleBackground />
       </div>

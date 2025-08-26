@@ -55,14 +55,14 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="block group rounded-lg shadow-xl p-8 transition-transform duration-300 hover:scale-[1.02] border border-transparent hover:border-[var(--portfolio-accent)] project-card"
           >
-            <h3 className="text-3xl font-bold font-display mb-4 text-[var(--portfolio-accent)] group-hover:text-primary transition-colors">
+            <h3 className="text-3xl font-bold font-display mb-4 text-[var(--portfolio-accent)]  transition-colors">
               {project.title}
             </h3>
             <div className="flex flex-wrap gap-2 mb-6">
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="px-3 py-1 border border-[var(--secondary-text)] text-secondary rounded-full text-xs font-medium group-hover:bg-[var(--portfolio-accent)] group-hover:text-[var(--portfolio-text-on-accent)] transition-colors font-body"
+                  className="px-3 py-1 border border-[var(--secondary-text)] text-secondary rounded-full text-xs font-medium transition-colors font-body"
                 >
                   {tech}
                 </span>
