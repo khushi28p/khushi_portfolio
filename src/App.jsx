@@ -12,7 +12,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 const App = () => {
   return (
     <ThemeProvider>
-      <div className="overflow-y-auto scrollbar-hidden">
+      <div className="overflow-y-auto scrollbar-hide">
         <Navbar />
         <HeroSection />
         <AboutMe />
