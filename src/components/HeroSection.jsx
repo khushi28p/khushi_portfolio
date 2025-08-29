@@ -1,5 +1,5 @@
 import React from "react";
-import ParticleBackground from "./Particle"; 
+import ParticleBackground from "./Particle";
 
 const HeroSection = () => {
   return (
@@ -7,26 +7,25 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <ParticleBackground />
       </div>
-      <div className="relative flex justify-between items-center h-screen z-10 px-40 pointer-events-none">
+      <div className="relative flex flex-col lg:flex-row justify-center lg:justify-between items-center h-screen z-10 p-4 lg:px-40 pointer-events-none text-center lg:text-left">
         <div>
-          <h1 className="text-5xl font-light mt-10 text-primary font-body">
+          <h1 className="text-4xl sm:text-5xl font-light mt-10 text-primary font-body">
             Hi, I'm
           </h1>
-          <h2 className="text-8xl font-bold text-center mt-4 text-[var(--portfolio-accent)]">
+          <h2 className="text-6xl sm:text-8xl font-bold mt-4 text-[var(--portfolio-accent)]">
             Khushi Parmar
           </h2>
-          <p className="text-3xl font-medium text-primary py-4 font-body">
+          <p className="text-xl sm:text-3xl font-medium text-primary py-4 font-body">
             Full Stack Developer
           </p>
 
-          <div className="flex gap-4 mt-6 pointer-events-auto">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 pointer-events-auto">
             <button
               className="px-6 py-3 border-2 border-[var(--portfolio-accent)] text-[var(--portfolio-accent)] rounded-lg font-semibold
                          hover:bg-[var(--portfolio-accent)] hover:text-[var(--portfolio-text-on-accent)] transition duration-300 shadow-md"
             >
               Explore Projects
             </button>
-
             <button
               className="px-6 py-3 border-2 border-[var(--portfolio-accent)] text-[var(--portfolio-accent)] rounded-lg font-semibold
                          hover:bg-[var(--portfolio-accent)] hover:text-[var(--portfolio-text-on-accent)] transition duration-300 shadow-md"
@@ -35,7 +34,7 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <div className="flex space-x-6 mt-8 pointer-events-auto">
+          <div className="flex justify-center lg:justify-start space-x-6 mt-8 pointer-events-auto">
             <a
               href="mailto:kparmar2855@gmail.com"
               className="text-secondary hover:text-[var(--portfolio-accent)] transition-colors"
@@ -61,17 +60,14 @@ const HeroSection = () => {
               </svg>
             </a>
           </div>
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 pointer-events-auto">
+
+          <div className="hidden lg:block absolute bottom-10 left-1/2 -translate-x-1/2 pointer-events-auto">
             <a
               href="#about"
               className="flex items-center text-[var(--portfolio-accent)] text-lg hover:text-[var(--portfolio-accent)] transition duration-300"
             >
               About me
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
+              <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
                   d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -81,11 +77,12 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/3 flex justify-center items-center pointer-events-auto">
+        
+        <div className="lg:flex w-1/3 justify-center items-center pointer-events-auto">
           <img
             src="/image.jpg"
             alt="avatar"
-            className="max-w-4/5 brightness-100 h-auto rounded-full shadow-2xl border-6 border-[var(--portfolio-accent)] transition-transform duration-300 ease-in-out hover:scale-105 "
+            className="max-w-full h-auto rounded-full shadow-2xl border-6 border-[var(--portfolio-accent)] transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
       </div>

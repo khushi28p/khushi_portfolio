@@ -1,6 +1,5 @@
     import React, { useState } from "react";
     import { useTheme } from "../context/ThemeContext";
-    import { div } from "framer-motion/client";
     import { HexColorPicker } from "react-colorful";
 
     const ThemeSwitcher = () => {

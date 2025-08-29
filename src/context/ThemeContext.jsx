@@ -44,7 +44,7 @@ export const ThemeProvider = ({ children }) => {
       accentColor
     );
     document.documentElement.style.setProperty(
-      "portfolio-accent-rgb",
+      "--portfolio-accent-rgb",
       hexToRgb(accentColor)
     );
 
@@ -59,6 +59,7 @@ export const ThemeProvider = ({ children }) => {
       "--portfolio-text-on-accent",
       textColorOnAccent
     );
+    
     let calculatedBgColor;
     let calculatedTextColor;
     let calculatedCardBgPrimary;
