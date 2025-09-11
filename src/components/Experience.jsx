@@ -68,7 +68,7 @@ const Experience = () => {
           {experienceData.map((item, index) => (
             <motion.li
               key={index}
-              className="mb-10 ms-4 rounded-lg p-4 transition-colors duration-300 hover:bg-gray-800"
+              className="mb-10 ms-4 rounded-lg p-4 transition-colors duration-300 hover:bg-[var(--portfolio-accent)]/5"
               variants={itemVariants}
             >
               <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-[var(--bg-primary)] bg-[var(--portfolio-accent)]"></div>
@@ -77,7 +77,7 @@ const Experience = () => {
               </time>
               <h3 className="text-xl font-semibold text-[var(--portfolio-accent)] mt-1">
                 {item.company}
-                <span className="text-base text-white/70 block md:inline md:ml-2 font-normal">
+                <span className="text-base text-[var(--portfolio-accent)]/70 block md:inline md:ml-2 font-normal">
                   - {item.title}
                 </span>
               </h3>

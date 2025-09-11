@@ -1,5 +1,6 @@
 import React from "react";
 import { BiSolidSchool } from "react-icons/bi";
+import { FaLocationDot } from "react-icons/fa6";
 
 const About = () => {
   const mernStack = [
@@ -78,14 +79,20 @@ const About = () => {
             </span>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-4 w-full">
-            <div className="flex flex-col text-4xl md:text-5xl text-center px-4 py-2 md:px-8 md:py-4 rounded-xl bg-card text-secondary shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div className="flex flex-col sm:flex-row justify-evenly items-center gap-6 mt-4 w-full">
+            <div className="flex flex-row md:flex-col justify-center items-center gap-4 text-sm md:text-xl border border-gray-300 px-4 md:px-6 py-3 md:py-4 rounded-xl text-[var(--portfolio-accent)] shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg text-center">
+            <FaLocationDot size={30} md:size={50} /> 
+            <span className="text-sm md:text-lg font-bold">
+              Indore
+            </span>
+          </div>
+            <div className="flex flex-row md:flex-col justify-center items-center gap-4 text-sm md:text-2xl font-bold border border-gray-300 px-4 md:px-6 py-3 md:py-4 rounded-xl text-[var(--portfolio-accent)] shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg text-center">
               9.5
-              <span className="font-bold text-xl md:text-2xl mt-1">CGPA</span>
+              <span className="text-sm md:text-lg font-body">CGPA</span>
             </div>
-            <div className="flex flex-col text-4xl md:text-5xl text-center px-4 py-2 md:px-8 md:py-4 rounded-xl bg-card text-secondary shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <div className="flex flex-row md:flex-col justify-center items-center gap-4 text-sm md:text-2xl font-bold border border-gray-300 px-4 md:px-6 py-3 md:py-4 rounded-xl text-[var(--portfolio-accent)] shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg text-center">
               10+
-              <span className="font-bold text-xl md:text-2xl mt-1">Projects built</span>
+              <span className="text-sm md:text-lg font-body">Projects built</span>
             </div>
           </div>
         </div>

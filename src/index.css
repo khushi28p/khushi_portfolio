@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-dynamic-bg {
   background-color: rgba(var(--bg-primary-rgb), 0.7);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .skill-chip {
