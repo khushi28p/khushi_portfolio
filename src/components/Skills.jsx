@@ -73,7 +73,7 @@ const Skills = () => {
             className={`px-6 py-3 font-body font-semibold transition duration-300 relative ${
               activeCategory === category
                 ? "text-[var(--portfolio-accent)] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[var(--portfolio-accent)]"
-                : "text-[var(--portfolio-text)] hover:text-[var(--portfolio-accent)]"
+                : "text-secondary hover:text-[var(--portfolio-accent)]"
             }`}
           >
             {category}
@@ -92,14 +92,16 @@ const Skills = () => {
         >
           {filteredSkills.map((skill, index) => (
             <motion.div
-              key={index}
-              className="flex gap-2 items-center justify-center align-center px-6 py-4 border-2 border-[var(--portfolio-accent)] text-[var(--portfolio-text)] rounded-lg font-body font-semibold hover:bg-[var(--portfolio-accent)] hover:text-[var(--portfolio-text-on-accent)] transition duration-300 shadow-md cursor-pointer transform hover:-translate-y-2 hover:scale-105"
-              whileHover={{ scale: 1.1 }}
+              key={`${skill.name}-${index}`}
+              className="relative flex gap-2 items-center justify-center align-center px-4 py-2 border-1 skill-chip text-primary rounded-lg font-body font-semibold hover:text-[var(--portfolio-text-on-accent)] transition duration-300 shadow-md cursor-pointer hover:-translate-y-2 hover:scale-105 hover-glow-accent"
+              whileHover={{ rotate: 1.5 }}
               transition={{ duration: 0.2 }}
               variants={itemVariants}
+              aria-label={`${skill.name} skill`}
             >
               <div className="text-4xl mb-2">{skill.icon}</div>
               <span className="text-lg text-center">{skill.name}</span>
+              <span className="skill-tooltip">{skill.category}</span>
             </motion.div>
           ))}
         </motion.div>

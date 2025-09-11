@@ -63,15 +63,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(10px);
 }
 
-.skill-chip {
-  border-color: var(--portfolio-accent);
-  color: var(--portfolio-accent);
-}
-.skill-chip:hover {
-  background-color: var(--portfolio-accent);
-  color: var(--portfolio-text-on-accent);
-}
-
 .about-timeline-line {
   background-color: var(--line-color); 
 }
@@ -220,4 +211,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none; 
+}
+
+.skill-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 4px);
+  margin-bottom: 6px;
+  background-color: var(--card-bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.skill-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--card-bg-primary) transparent transparent transparent;
+}
+
+.skill-chip:hover .skill-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
